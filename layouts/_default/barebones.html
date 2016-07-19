@@ -1,0 +1,16 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8"/>
+	<title>{{.Title }} | {{.Site.Title}}</title>
+	<meta name="author" content="{{.Site.Author.name}}"/>
+	<meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}"/>
+	<meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}"/>
+
+	<!--<link rel="icon" href="{{ "/favicon.png" | absURL }}"/>-->
+</head>
+<body>
+{{ .Content }}
+{{ partial "google-analytics" . }}
+</body>
+</html>

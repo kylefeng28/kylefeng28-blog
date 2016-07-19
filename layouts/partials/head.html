@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="{{.Site.LanguageCode}}">
+<head>
+	<meta charset="utf-8"/>
+	<title>{{.Title }} | {{.Site.Title}}</title>
+	<meta name="author" content="{{.Site.Author.name}}"/>
+	<meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}"/>
+	<meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}"/>
+	{{ .Hugo.Generator }}
+
+	<!--Mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<!--Refs-->
+	<!--<link rel="icon" href="{{ "/favicon.png" | absURL }}"/>-->
+	<base href="{{.Site.BaseURL}}"/>
+	<link rel="canonical" href="{{.Permalink}}"/>
+	<link href="{{.RSSlink}}" rel="alternate" type="application/rss+xml" title="{{.Site.Title}}"/>
+
+	<!--TODO: itemprop, og-->
+	<!--<meta property="og:type" content="website"/>-->
+
+	<!--Font-->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<!--
+	<link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+	-->
+
+	<!--CSS-->
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/skeleton.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>

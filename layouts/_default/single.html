@@ -1,0 +1,23 @@
+{{ partial "head" . }}
+
+<div class="container">
+<header class="header">
+	<nav class="navbar container">
+		<ul class="navbar-list">
+			<li class="navbar-item"><h3><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h3></li>
+			{{ partial "menu.html" . }}
+		</ul>
+	</nav>
+</header>
+</div>
+
+<div class="container">
+<main class="content">
+  <div class="post">
+    <h3 class="title">{{.Title}}</h3>
+    {{ .Content }}
+  </div>
+</main>
+</div>
+
+{{ partial "footer" . }}
