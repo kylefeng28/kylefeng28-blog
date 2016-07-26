@@ -105,3 +105,12 @@ a:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
+
+.playground-item {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+}
+.caption {
+	display: block;
+}

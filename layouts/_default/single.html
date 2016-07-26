@@ -15,7 +15,10 @@
 <main class="content">
   <div class="post">
     <h3 class="title">{{.Title}}</h3>
+	<!-- this has some problems. when `main` is defined, this will show up on all single pages. " }} -->
     {{ .Content }}
+	{{ block "main" . }}
+	{{ end }}
   </div>
 </main>
 </div>

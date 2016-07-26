@@ -1,0 +1,13 @@
+{{ template "_default/single.html" . }}
+{{ define "main" }}
+
+{{ range .Params.items }}
+<div class="playground-item">
+	<a href="{{.link}}">
+		<img src="{{.screenshot}}" width=200/>
+		<span class="caption">{{.name}}</span>
+	</a>
+</div>
+{{ end }}
+
+{{ end }}

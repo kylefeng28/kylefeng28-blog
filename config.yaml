@@ -1,0 +1,27 @@
+baseurl: "https://kylefeng28.github.io/"
+languageCode: "en-US"
+title: "kylefeng28"
+metaDataFormat: "yaml"
+googleAnalytics: "UA-64685214-1"
+
+author:
+  name: "Kyle Feng"
+
+permalinks:
+  post: "/blog/:year/:month/:day/:title/"
+
+params:
+  description: ""
+  copyright: "© 2015-16 Kyle Feng"
+
+# TODO switch to yaml
+menu:
+  main:
+    - { name: "Blog", url: "/blog", weight: 1 }                                                                                                                               
+    - { name: "Playground", url: "/playground", weight: 2 }
+    - { name: "About", url: "/about", weight: 3 }
+    # - { name: "Archives", url: "/archives"}   
+
+# from hexo
+# date_format: YYYY-MM-DD
+# time_format: HH:mm:ss
