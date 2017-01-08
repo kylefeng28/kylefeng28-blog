@@ -8,7 +8,7 @@ I'm interested in using technology to better people's lives, especially in the f
 On this site, I'll share things that I learn and things that I make on my [Blog][].
 You can also find me on [Github][].
 
-Some of the things I do for fun include 
+Some of the things I do for fun include
 playing violin and making random stuff (find some on the [Playground][]).
 
 <!--

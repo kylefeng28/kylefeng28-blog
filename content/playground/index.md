@@ -10,10 +10,12 @@ items:
   - name: "pulsations-rays"
     link: "/playground/pulsations/rays.html"
     screenshot: "/playground/pulsations/rays.png"
+  - name: "Julia Set"
+    link: "https://www.shadertoy.com/view/ldt3W8"
+    screenshot: "/playground/julia-set/screenshot.png"
 
 ---
 
 Random stuff I make.
 
-<!-- TODO make data.json or something. change default layout to none -->
 <!-- TODO add descriptions -->
