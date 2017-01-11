@@ -11,7 +11,7 @@ items:
     link: "/playground/pulsations/rays.html"
     screenshot: "/playground/pulsations/rays.png"
   - name: "Julia Set"
-    link: "https://www.shadertoy.com/view/ldt3W8"
+    link: "https://www.shadertoy.com/embed/ldt3W8"
     screenshot: "/playground/julia-set/screenshot.png"
 
 ---
