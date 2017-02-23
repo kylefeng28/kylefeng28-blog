@@ -1,13 +1,24 @@
-{{ template "_default/single.html" . }}
-{{ define "main" }}
+{{ partial "head" . }}
+{{ partial "navbar" . }}
 
-{{ range .Params.items }}
-<div class="playground-item">
-	<a href="{{.link}}">
-		<img src="{{.screenshot}}" width=200/>
-		<span class="caption">{{.name}}</span>
-	</a>
+<div class="container">
+<main class="content">
+  <div class="post">
+		<h3 class="title">{{.Title}}</h3>
+
+    {{ .Content }}
+
+    {{ range .Params.items }}
+    <div class="playground-item">
+    	<a href="{{.link}}">
+    		<img src="{{.screenshot}}" width=200/>
+    		<span class="caption">{{.name}}</span>
+    	</a>
+    </div>
+    {{ end }}
+
+  </div>
+</main>
 </div>
-{{ end }}
 
-{{ end }}
+{{ partial "footer" . }}
