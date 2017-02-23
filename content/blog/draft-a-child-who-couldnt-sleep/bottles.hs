@@ -1,3 +1,4 @@
+-- 99 Bottles of Beer
 showBottle :: Int -> String
 showBottle 0 = "no more bottles"
 showBottle 1 =  "1 bottle"

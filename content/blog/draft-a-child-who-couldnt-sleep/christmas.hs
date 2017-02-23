@@ -24,13 +24,11 @@ ordinal n = show n ++ "th"
 
 day :: Int -> String
 day 1 = "On the 1st day of Christmas, my true love gave to me:\n" ++
-              "a " ++ gift 1 ++ "\n"
+        "a " ++ gift 1 ++ "\n"
 day n = "On the " ++ ordinal n ++ " day of Christmas, my true love gave to me:\n" ++
-              gifts n ++ "\n"
+        gifts n ++ "\n"
 
 christmas = map day [1,2..12]
 
 main = do
     mapM putStrLn christmas
-
--- I could've used a list: take n $ reverse gifts

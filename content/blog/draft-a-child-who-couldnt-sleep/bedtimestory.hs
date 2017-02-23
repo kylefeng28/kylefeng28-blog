@@ -1,13 +1,4 @@
---
--- A child couldn't sleep, so her mother told a story about a little frog,
---   who couldn't sleep, so the frog's mother told a story about a little bear,
---     who couldn't sleep, so the bear's mother told a story about a little weasel,
---       ... who fell asleep.
---     ... and then the little bear fell asleep;
---   ... and then the little frog fell asleep;
--- ... and then the child fell asleep.    
---
-
+-- A Bedtime Story
 indent :: Int -> String
 indent n = concat $ replicate n "  "
 

@@ -30,7 +30,7 @@ you would need to write `{{``< readfile "/content/blog/my-post/hello.hs" >``}}`,
 That's a little bit annoying to write, so I changed it a bit
 so that the path could be relative to the file it was called in:
 
-#### include
+##### include
 ```
 {{- delimit (slice "/content" .Page.URL (.Get 0)) "" | readFile -}}
 ```
@@ -40,12 +40,12 @@ That way, you would only need to write `{{``< include "hello.hs" >``}}`.
 Just for good measure, I made the following shortcodes that would
 read a file from the content or static directory, respectively.
 
-#### includeContent
+##### includeContent
 ```
 {{- delimit (slice "/content" (.Get 0 | relURL)) "" | readFile -}}
 ```
 
-#### includeStatic
+##### includeStatic
 ```
 {{- delimit (slice "/static" (.Get 0 | relURL)) "" | readFile -}}
 ```

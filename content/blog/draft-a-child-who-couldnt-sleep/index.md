@@ -1,11 +1,17 @@
 ---
 date: 2017-02-21T13:14:39-05:00
+dateModified: 2017-02-22T23:14:49-05:00
 draft: true
 layout: ""
 tags: "haskell"
 title: A Child Who Couldn't Sleep...
 ---
 
+There's going to be a lot of storytelling and singing in this post.
+
+You have been warned.
+
+## A Bedtime Story
 Our COMP 411 assignment was to implement the following recursive story in MIPS:
 
 > A child couldn't sleep, so her mother told a story about a little frog,  
@@ -16,31 +22,48 @@ Our COMP 411 assignment was to implement the following recursive story in MIPS:
 > &emsp;... and then the little frog fell asleep;  
 > ... and then the child fell asleep.
 
-
-Wow, what a great little story! I tried looking for it online to see if the story had a name, and I found [this post on Everything2](http://everything2.com/user/wharfinger/writeups/recursion). 
-
-> Stuff happens on the way in, you hit an endpoint, and other stuff happens in reverse order on the way back out as it all unwinds. For somebody who doesn't "get" recursion yet, this is not a bad map to start with.
-
----
-
-Since I'm learning Haskell, I decided to implement the story in Haskell.
-Why, you may ask?
+Since I'm currently learning Haskell on my own, I decided to implement the story in Haskell as well.
 
 ![xkcd 1270 -- Function](https://imgs.xkcd.com/comics/functional.png)
 
-Enough said.
+##### bedtimestory.hs
 
 ```haskell
-{{< include "sleepless.hs" >}}
+{{< include "bedtimestory.hs" >}}
 ```
 
 ---
 
-99 bottles of beer
+I tried looking for it online to see if the story had a name, and I found [this post on Everything2](http://everything2.com/user/wharfinger/writeups/recursion). For the OP, this story was the best explanation of recursion they've ever heard.
 
-12 Days of Christmas
+> Stuff happens on the way in, you hit an endpoint, and other stuff happens in reverse order on the way back out as it all unwinds. For somebody who doesn't "get" recursion yet, this is not a bad map to start with.
+
+Not a bad analogy at all! As I thought about this some more, I realized that a lot of songs use recursion
+that use recursion as well.
+
+Granted, they are actually cumulative, but they can be implemented using recursion.
 
 https://en.wikipedia.org/wiki/The_Complexity_of_Songs
+http://www.macs.hw.ac.uk/~greg/publications/gjm.idc15.pdf
+https://en.wikipedia.org/wiki/Cumulative_song
 
----
+##### 99 Bottles of Beer
+```haskell
+{{< include "bottles.hs" >}}
+```
 
+##### 12 Days of Christmas
+```haskell
+{{< include "christmas.hs" >}}
+```
+
+I could've used a list: `take n $ reverse gifts`, but that wouldn't show recursion, would it!
+
+##### Alouette
+```haskell
+{{< include "alouette.hs" >}}
+```
+
+<!--
+TODO: collapse code
+-->
