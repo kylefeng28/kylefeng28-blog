@@ -1,0 +1,26 @@
+Schedule:
+Hello world: 2/2
+Open Source 101: 2/4 + 3
+
+A Child Who Couldn't sleep: 2/30
+Includes in Hugo: 2/30
+
+TODO:
+- CPLS: #cpls competitive programming
+  - 1/23 + 1 lec1 linear sweep algorithm
+  - 1/30 + 1 lec2 dfs and bfs algorithm
+  - 2/13   (did not go to lecture)
+  - 2/20 + 1 lec4 tries
+
+- d3 -- visualizing the meme economy
+- TI 84 assembly
+  - Back in middle school we used to program on the TI-84.
+  - Zeda's hex code chart
+- UNC water apocalypse
+- UNC CS Server friends command
+- Made a Brainf**k interpreter in Ruby this past winter break:
+
+- Mac OS X compose key
+  - import from TiddlyWiki, give links to other blogs and:
+  - https://github.com/samhocevar/wincompose/blob/master/src/rules/Xcompose.txt
+  - https://github.com/kragen/xcompose/blob/master/dotXCompose

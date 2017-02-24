@@ -1,0 +1,26 @@
+{{ partial "head" . }}
+{{ partial "navbar" . }}
+
+<div class="container">
+<main class="content">
+  <div class="post">
+		<h3 class="article-title">{{.Title}}</h3>
+
+		{{ range where .Paginator.Pages "Type" "post" }} <!--also filter "Params.hidden" "ne" "true"-->
+			<a class="list-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<time class="list-date" datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+			<br/>
+			{{ .Summary }}
+			{{ if .Truncated }}
+				<div class="read-more-link">
+					<a href="{{ .RelPermalink }}">Read More…</a>
+				</div>
+			{{ end }}
+		{{ end }}
+
+  </div>
+	{{ partial "nav.html" . }}
+</main>
+</div>
+
+{{ partial "footer" . }}

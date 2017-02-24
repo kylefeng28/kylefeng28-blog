@@ -8,7 +8,7 @@ author:
   name: "Kyle Feng"
 
 permalinks:
-  post: "/blog/:year/:month/:day/:title/"
+  post: "/post/:year/:month/:day/:title/"
 
 params:
   description: ""
@@ -17,7 +17,7 @@ params:
 menu:
   main:
     - { name: "About", url: "/about", weight: 1 }
-    # - { name: "Blog", url: "/blog", weight: 2 }
+    - { name: "Blog", url: "/post", weight: 2 }
     - { name: "Playground", url: "/playground", weight: 3 }
 
 # from hexo

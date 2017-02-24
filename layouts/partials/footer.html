@@ -6,5 +6,11 @@
 </footer>
 </div>
 
+<!--Syntax highlighting-->
+{{ if in .Params.extras "highlight" }}
+<script src="/vendor/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+
 </body>
 </html>
