@@ -1,0 +1,3 @@
+concurrently --kill-others \
+	"scss --watch static/css:static/css" \
+	"hugo server --watch --buildDrafts"
